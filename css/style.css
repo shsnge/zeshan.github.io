@@ -1,0 +1,241 @@
+/*Reset CSS*/
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');*/
+html,body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+body{
+    padding-top:130px; 
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+ul{
+    padding: 0;
+    list-style: none;
+    /*overflow: hidden;*/
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+/*Reset CSS End*/
+
+/*Header Start*/
+header{
+    /*overflow: hidden;*/
+    background: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 0 5px #ddd;
+    /*border: 1px solid #f5f5f5;*/
+}
+.logo{
+    width: 250px;
+    float: left;
+}
+.menubar{
+    float: right;
+}
+.menubar .menu{
+    border-radius: 4px;
+    margin-top: 38px;
+}
+.menubar .menu li{
+    /*display: inline-block;*/
+    /*display: inline;*/
+    float: left;
+    position: relative;
+}
+.menubar .menu li a{
+    display: block;
+    padding: 5px 25px;
+    background: #000;
+    font-size: 16px;
+    color: #fff;
+}
+.menubar .menu li a:hover,
+.menubar .menu li a:focus{
+    transition: .3s linear;
+    background: yellow;
+    color: #000;
+}
+.menubar .menu li a:focus{
+    background: gold;
+}
+.menubar .menu li ul.sub_menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 34px;
+}
+.menubar .menu li ul.sub_menu li{
+    float: none;
+}
+.menubar .menu li:hover ul.sub_menu{
+    display: block;
+}
+.menubar .menu li ul.sub_menu li .sub_menu2{
+    position: absolute;
+    left: -100%;
+    display: none;
+    top: 0;
+    width: 110px;
+}
+.menubar .menu li ul.sub_menu li:hover .sub_menu2{
+    display: block;
+}
+/*Header End*/
+/*Banner Start*/
+.banner h1{
+    font-size: 100px;
+    color: #333332;    
+    /*margin-top: 100px;*/
+    /*text-align: center;*/
+}
+.banner{
+    position: relative;
+    /*background: url("../images/main_banner_1.jpeg") no-repeat;*/
+    /*background-size: cover;*/
+    /*height: 400px;   */
+    /*padding:100px 40px 280px;*/
+}
+.banner .banner_content{
+    position: absolute;
+    padding:40px; 
+}
+/*Banner Ends*/
+
+/*About Us*/
+.about_us{
+    overflow: hidden;
+    padding:40px;    
+}
+.my_image{
+    width: 35%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+.my_image img{
+    padding: 5px;
+    border:1px solid #ddd;
+    border-radius: 50%;
+    width: 70%;
+}
+.my_info{
+    width: 65%;
+    float: left;
+    padding: 0 50px;
+    box-sizing: border-box;
+    text-align: justify; 
+}
+.name{
+    border-bottom:1px solid #f18b03;
+    letter-spacing: 3px;
+}
+.name span{
+    background:#f18b03;
+    color: #fff;
+    display: inline-block;
+    padding: 3px 15px;
+    min-width: 200px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+/*About Us End*/
+/*Portfolio Start*/
+.portfolio{
+    padding:40px;
+    overflow: hidden;
+    background:#f5f5f5; 
+}
+.section_title{
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.portfolio_items{
+    overflow: hidden;
+}
+.portfolio_items .portfolio_item{
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    /*margin-bottom: 15px;*/
+    position: relative;
+}
+.portfolio_items .portfolio_item img{
+    border:1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+    background:#fff;
+}
+.portfolio_items .portfolio_item:hover img{
+    border-radius:50%;
+    transition: .3s all;
+}
+
+/*Portfolio End*/
+/*Contact Us Start*/
+.contact_us{
+    padding: 40px;
+}
+textarea{
+    resize: none;
+}
+.contact_area{
+    width: 450px;
+    margin: auto;
+}
+.contact_area label{
+    display: block;
+}
+.contact_area input, .contact_area textarea{
+    width: 100%;
+    border:1px solid #ddd;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+.contact_area input:focus,.contact_area textarea:focus{
+    border-color: blue;
+}
+.send_button{
+    text-align: center;
+}
+button{
+    background:#10c795;
+    color: #fff;
+    padding: 8px 20px;
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover, button:focus{
+    background: #0fa97f;
+}
+/*Contact Us End*/
+/*Footer Start*/
+footer{
+    background:#0fa97f;
+    color: #fff;
+    text-align: center;
+    padding: 10px; 
+}
+
+/*Footer End*/
